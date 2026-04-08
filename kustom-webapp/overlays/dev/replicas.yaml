@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: mywebapp
-        image: your-image:latest
+        image: nginx:latest
