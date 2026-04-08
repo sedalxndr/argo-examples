@@ -4,3 +4,14 @@ metadata:
   name: mywebapp
 spec:
   replicas: 3
+  selector:  # Обязательное поле
+    matchLabels:
+      app: mywebapp
+  template:  # Обязательное поле
+    metadata:
+      labels:  # Обязательное поле
+        app: mywebapp
+    spec:
+      containers:
+      - name: mywebapp
+        image: your-image:latest
